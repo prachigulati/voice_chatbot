@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>AI  Assistent</p>
+        <div class="btn">
+            <div class="agent-img">
+                <button onclick="startListening()">Talk to agent</button>
+            </div>
+            <label>Select your language : </label>
+            <select class="language" id="language" onchange="handleLanguage(event)">
+                <option value="en-US">English</option>
+                <option value="hi-IN">Hindi</option>
+            </select>
+            <button onclick="stopSpeaking()">Pause</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
